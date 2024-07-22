@@ -112,14 +112,14 @@ def run(root):
 
     clear_results = []
     for [x_step, y_step] in list_results:
-        if q_x * 0.25 < x_step < q_x* 2.2 and \
-           q_y * 0.25 < y_step < q_y * 2.2:
+        if q_x * 0.25 < x_step < q_x* 1.75 and \
+           q_y * 0.25 < y_step < q_y * 1.75:
             clear_results.append([x_step, y_step])
 
 
     print(list_results)
-    #print(f'Result:\n\n\n___________\n\n{np.mean(list_results, axis=0)}')
-    print(f'Result:\n\n\n___________\n\n{np.mean(clear_results, axis=0)}')
+    print(f'Result:\n\n\n___________\n\n{np.mean(list_results, axis=0)}')
+    print(f'Cleat result:\n\n\n___________\n\n{np.mean(clear_results, axis=0)}')
 
     # show_results()
 
